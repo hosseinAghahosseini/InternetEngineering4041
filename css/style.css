@@ -1,0 +1,109 @@
+
+/* font definitions */
+.farsi-vazirmatn {
+    font-family: "Vazirmatn", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.english-title {
+    font-family: "Germania One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.english-text {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #000000;
+    border-radius: 0px 0px 15px 15px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(32 54 73) 61%, rgb(40 87 103) 100%)
+}
+
+.navbar .logo {
+    color: white;    
+    font-size: 28px;
+}
+
+.logo{
+    text-shadow: mediumvioletred 2px 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+}
+
+.nav-links li {
+    margin: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-shadow: #7300ff 2px 2px;
+    text-decoration: none;
+}
+
+.nav-links-selected {
+    text-decoration: underline !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu Toggle */
+.menu-toggle {
+    display: none; /* Hide checkbox */
+}
+
+.menu-icon {
+    display: none; /* Hide menu icon */
+    flex-direction: column;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+
+.menu-icon-label{
+    padding: 0px 10px 6px 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+        width: calc(100% - 10px);
+        z-index: 1;
+        border-radius: 15px;
+        background: #000000;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(32 54 73) 61%, rgb(40 87 103) 100%);
+        margin: 10px 5px;
+    }
+    .menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex; /* Show links when checkbox is checked */
+    }
+    .menu-icon {
+        display: flex; /* Show menu icon on mobile */
+    }
+}
