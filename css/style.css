@@ -1,4 +1,3 @@
-
 /* font definitions */
 .farsi-vazirmatn {
     font-family: "Vazirmatn", sans-serif;
@@ -106,4 +105,16 @@
     .menu-icon {
         display: flex; /* Show menu icon on mobile */
     }
+}
+
+/* Sections */
+section{
+    padding: 10px;
+}
+
+/* Gallery */
+.gallery-image{
+    width: 32%;
+    border-radius: 10px;
+    margin: 10px 5px;
 }
