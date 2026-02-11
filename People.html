@@ -1,26 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>
-    BasuCompt - People
-</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="./css/style.css">
-
+    <title>BasuCompt - People</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the team behind BasuCompt - instructors and students">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👥</text></svg>">
 </head>
-
 <body>
     <nav class="navbar english-title">
         <a href="Index.html" class="logo">BasuCompt</a>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label class="menu-icon menu-icon-label" for="menu-toggle">
-         ≡
-        </label>
+        <label class="menu-icon menu-icon-label" for="menu-toggle">≡</label>
         <ul class="nav-links">
             <li><a href="Blog.html">Blog</a></li>
             <li><a href="People.html" class="nav-links-selected">People</a></li>
@@ -30,16 +27,18 @@
             <li><a href="Contact.html">Contact</a></li>
         </ul>
     </nav>
-
-    <section class="people-container">
-        <header class="people-header">
-            <h1 class="english-title">Our People</h1>
-            <p>
-                Meet the instructor and students who developed the project: BasuCompt.
-            </p>
-        </header>
-        <section id="people-grid" class="people-grid"></section>
-    </section>
+    
+    <main>
+        <section class="people-container">
+            <header class="people-header">
+                <h1 class="english-title">👥 Our People</h1>
+                <p>
+                    Meet the instructor and students who developed the BasuCompt project.
+                </p>
+            </header>
+            <div id="people-grid" class="people-grid"></div>
+        </section>
+    </main>
     
     <footer class="footer english-text">
         <div class="footer-content">
@@ -65,10 +64,12 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 BasuCompt. All rights reserved.</p>
+            <p>&copy; 2026 BasuCompt. All rights reserved.</p>
         </div>
     </footer>
+    
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+    <script src="./js/script.js"></script>
     <script src="./js/people.js"></script>
 </body>
 </html>
-

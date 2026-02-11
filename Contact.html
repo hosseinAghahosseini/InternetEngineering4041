@@ -1,26 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>
-    BasuCompt - Contact Us
-</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="./css/style.css">
-
+    <title>BasuCompt - Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with BasuCompt - Computer Engineering Student Scientific Association">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📧</text></svg>">
 </head>
-
 <body>
     <nav class="navbar english-title">
         <a href="Index.html" class="logo">BasuCompt</a>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label class="menu-icon menu-icon-label" for="menu-toggle">
-         ≡
-        </label>
+        <label class="menu-icon menu-icon-label" for="menu-toggle">≡</label>
         <ul class="nav-links">
             <li><a href="Blog.html">Blog</a></li>
             <li><a href="People.html">People</a></li>
@@ -30,8 +27,86 @@
             <li><a href="Contact.html" class="nav-links-selected">Contact</a></li>
         </ul>
     </nav>
-     
+    
+    <main>
+        <section style="text-align: center; margin-bottom: 40px;">
+            <h1 class="page-title">📧 Contact Us</h1>
+            <p style="color: hsl(var(--muted-foreground)); max-width: 600px; margin: 0 auto;">
+                Have questions or suggestions? We'd love to hear from you!
+            </p>
+        </section>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1000px; margin: 0 auto;">
+            <div style="background: hsl(var(--card)); padding: 30px; border-radius: 20px;">
+                <h2 style="margin-bottom: 30px;">📍 Visit Us</h2>
+                <div style="margin-bottom: 30px;">
+                    <h3 style="color: hsl(var(--primary)); margin-bottom: 10px;">Address</h3>
+                    <p style="color: hsl(var(--muted-foreground));">Bu-Ali Sina University<br>Computer Engineering Department<br>Hamedan, Iran</p>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <h3 style="color: hsl(var(--primary)); margin-bottom: 10px;">Email</h3>
+                    <p style="color: hsl(var(--muted-foreground));">basucompt@basu.ac.ir</p>
+                </div>
+                <div>
+                    <h3 style="color: hsl(var(--primary)); margin-bottom: 10px;">Office Hours</h3>
+                    <p style="color: hsl(var(--muted-foreground));">Sunday - Thursday<br>10:00 - 16:00</p>
+                </div>
+            </div>
+            
+            <div style="background: hsl(var(--card)); padding: 30px; border-radius: 20px;">
+                <h2 style="margin-bottom: 30px;">📝 Send Message</h2>
+                <form class="contact-form" style="padding: 0; background: transparent;">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Inquiry about...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer english-text">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="english-title footer-logo">BasuCompt</h3>
+                <p>Building the future of computing</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="People.html">People</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Memes.html">Memes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BasuCompt. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <button id="scrollTopBtn" title="Go to top">↑</button>
     <script src="./js/script.js"></script>
 </body>
 </html>
-
