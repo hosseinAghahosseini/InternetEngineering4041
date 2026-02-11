@@ -1,46 +1,75 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>
-    BasuCompt - SingleGallery
-</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="./css/style.css">
-
+    <title>BasuCompt - Campus Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beautiful photos of Bu-Ali Sina University campus and Computer Engineering Department">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼️</text></svg>">
 </head>
-
 <body>
     <nav class="navbar english-title">
         <a href="Index.html" class="logo">BasuCompt</a>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label class="menu-icon menu-icon-label" for="menu-toggle">
-         ≡
-        </label>
+        <label class="menu-icon menu-icon-label" for="menu-toggle">≡</label>
         <ul class="nav-links">
             <li><a href="Blog.html">Blog</a></li>
             <li><a href="People.html">People</a></li>
-            <li><a href="Gallery.html">Gallery</a></li>
-            <li><a href="Events.html" class="nav-links-selected">Events</a></li>
+            <li><a href="Gallery.html" class="nav-links-selected">Gallery</a></li>
+            <li><a href="Events.html">Events</a></li>
             <li><a href="Memes.html">Memes</a></li>
             <li><a href="Contact.html">Contact</a></li>
         </ul>
     </nav>
-
-    <section>
-        <h2>Gallery Title</h2>
-        <div>
-            <img src="./assets/images/DSC_6834.jpg" alt="Deprtment outdoors" class="gallery-image">
-            <img src="./assets/images/DSC_6948.jpg" alt="Deprtment outdoors" class="gallery-image">
-            <img src="./assets/images/DSC_6950.jpg" alt="Deprtment outdoors" class="gallery-image">
-        </div>
-    </section>
     
+    <main>
+        <header style="text-align: center; margin-bottom: 40px;">
+            <h1 class="page-title">🏛️ Campus Gallery</h1>
+            <p style="color: hsl(var(--muted-foreground));">Bu-Ali Sina University - Computer Engineering Department</p>
+        </header>
+        
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <img src="./assets/images/DSC_6834.jpg" alt="Bu-Ali Sina University - Main Building Entrance" class="gallery-image">
+            <img src="./assets/images/DSC_6948.jpg" alt="Computer Engineering Department - Faculty Building" class="gallery-image">
+            <img src="./assets/images/DSC_6950.jpg" alt="University Campus - Green Space and Walkway" class="gallery-image">
+        </div>
+    </main>
+    
+    <footer class="footer english-text">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="english-title footer-logo">BasuCompt</h3>
+                <p>Building the future of computing</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="People.html">People</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Memes.html">Memes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BasuCompt. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <button id="scrollTopBtn" title="Go to top">↑</button>
     <script src="./js/script.js"></script>
 </body>
 </html>
-
