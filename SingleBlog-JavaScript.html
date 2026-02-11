@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BasuCompt - JavaScript ES6+ Features</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern JavaScript features that every developer should know in 2026.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🟨</text></svg>">
+</head>
+<body>
+    <nav class="navbar english-title">
+        <a href="Index.html" class="logo">BasuCompt</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label class="menu-icon menu-icon-label" for="menu-toggle">≡</label>
+        <ul class="nav-links">
+            <li><a href="Blog.html" class="nav-links-selected">Blog</a></li>
+            <li><a href="People.html">People</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="Memes.html">Memes</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article>
+            <header style="margin-bottom: 40px;">
+                <h1 class="page-title">JavaScript ES6+ Features</h1>
+                <div style="display: flex; gap: 30px; color: hsl(var(--muted-foreground)); margin: 20px 0; flex-wrap: wrap; background: hsl(var(--card)); padding: 20px 30px; border-radius: 50px;">
+                    <span>📅 February 5, 2026</span>
+                    <span>✍️ <a href="SinglePeople-Hossein.html" style="color: hsl(var(--primary-light)); text-decoration: none;">Hossein Aghahosseini</a></span>
+                    <span>⏱️ 8 min read</span>
+                    <span>🏷️ JavaScript</span>
+                </div>
+            </header>
+            
+            <div style="background: hsl(var(--card)); padding: 40px; border-radius: 24px; margin-bottom: 40px;">
+                <h2 style="color: hsl(var(--primary)); margin-bottom: 20px;">The Evolution of JavaScript</h2>
+                <p style="margin-bottom: 30px; line-height: 1.8; font-size: 1.1rem;">
+                    ECMAScript 2015 (ES6) revolutionized JavaScript development. Since then, yearly updates have brought us powerful features that make code cleaner, more efficient, and more enjoyable to write.
+                </p>
+                
+                <h2 style="color: hsl(var(--primary)); margin: 40px 0 20px;">1. Arrow Functions</h2>
+                <p style="margin-bottom: 20px; line-height: 1.8;">
+                    Arrow functions provide a concise syntax and lexical `this` binding.
+                </p>
+                <pre style="background: hsl(var(--background)); padding: 20px; border-radius: 16px; overflow-x: auto; margin-bottom: 30px;"><code style="color: hsl(var(--primary-light));">// Old way
+function add(a, b) {
+    return a + b;
+}
+
+// ES6+
+const add = (a, b) => a + b;</code></pre>
+                
+                <h2 style="color: hsl(var(--primary)); margin: 40px 0 20px;">2. Template Literals</h2>
+                <p style="margin-bottom: 20px; line-height: 1.8;">
+                    String interpolation and multi-line strings made easy.
+                </p>
+                <pre style="background: hsl(var(--background)); padding: 20px; border-radius: 16px; overflow-x: auto; margin-bottom: 30px;"><code style="color: hsl(var(--primary-light));">const name = 'World';
+console.log(`Hello, ${name}!`);</code></pre>
+                
+                <h2 style="color: hsl(var(--primary)); margin: 40px 0 20px;">3. Destructuring</h2>
+                <p style="margin-bottom: 20px; line-height: 1.8;">
+                    Extract values from arrays and objects with elegant syntax.
+                </p>
+                <pre style="background: hsl(var(--background)); padding: 20px; border-radius: 16px; overflow-x: auto; margin-bottom: 30px;"><code style="color: hsl(var(--primary-light));">const { name, age } = user;
+const [first, second] = array;</code></pre>
+                
+                <h2 style="color: hsl(var(--primary)); margin: 40px 0 20px;">4. Async/Await</h2>
+                <p style="margin-bottom: 20px; line-height: 1.8;">
+                    Write asynchronous code that looks synchronous.
+                </p>
+                <pre style="background: hsl(var(--background)); padding: 20px; border-radius: 16px; overflow-x: auto; margin-bottom: 30px;"><code style="color: hsl(var(--primary-light));">async function fetchData() {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error(error);
+    }
+}</code></pre>
+                
+                <div style="background: linear-gradient(145deg, hsl(var(--primary) / 0.1), hsl(var(--background))); padding: 30px; border-radius: 20px; margin: 40px 0; border-left: 6px solid hsl(var(--primary));">
+                    <p style="font-style: italic; margin-bottom: 15px; font-size: 1.2rem;">"Any application that can be written in JavaScript, will eventually be written in JavaScript."</p>
+                    <p style="color: hsl(var(--primary)); font-weight: bold;">— Jeff Atwood</p>
+                </div>
+                
+                <h2 style="color: hsl(var(--primary)); margin: 40px 0 20px;">Conclusion</h2>
+                <p style="margin-bottom: 20px; line-height: 1.8;">
+                    Modern JavaScript features dramatically improve developer experience and code quality. Start using them today if you haven't already!
+                </p>
+            </div>
+            
+            <section class="comments-section">
+                <h3 style="margin-bottom: 30px;">💬 Comments</h3>
+                
+                <div class="comment">
+                    <strong>Mohammadreza Hadi</strong>
+                    <p style="margin-top: 8px;">Great overview! I especially like the async/await section.</p>
+                    <small style="color: hsl(var(--muted-foreground));">3 days ago</small>
+                </div>
+                
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts..." rows="4"></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </section>
+            
+            <section class="related-posts">
+                <h3 style="margin-bottom: 20px;">📚 Related Posts</h3>
+                <ul>
+                    <li><a href="SingleBlog-Responsive.html">Responsive Design Best Practices</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    
+    <footer class="footer english-text">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="english-title footer-logo">BasuCompt</h3>
+                <p>Building the future of computing</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="People.html">People</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Memes.html">Memes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BasuCompt. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+    <script src="./js/script.js"></script>
+</body>
+</html>

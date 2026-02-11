@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BasuCompt - Responsive Design Best Practices</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How to create websites that look great on all devices - from mobile to desktop.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+</head>
+<body>
+    <nav class="navbar english-title">
+        <a href="Index.html" class="logo">BasuCompt</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label class="menu-icon menu-icon-label" for="menu-toggle">≡</label>
+        <ul class="nav-links">
+            <li><a href="Blog.html" class="nav-links-selected">Blog</a></li>
+            <li><a href="People.html">People</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="Memes.html">Memes</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article>
+            <header style="margin-bottom: 40px;">
+                <h1 class="page-title">Responsive Design Best Practices</h1>
+                <div style="display: flex; gap: 30px; color: hsl(var(--muted-foreground)); margin: 20px 0; flex-wrap: wrap; background: hsl(var(--card)); padding: 20px 30px; border-radius: 50px;">
+                    <span>📅 February 8, 2026</span>
+                    <span>✍️ <a href="SinglePeople-Mohammadreza.html" style="color: hsl(var(--primary-light)); text-decoration: none;">Mohammadreza Hadi</a></span>
+                    <span>⏱️ 6 min read</span>
+                    <span>🏷️ CSS</span>
+                </div>
+            </header>
+            
+            <div style="background: hsl(var(--card)); padding: 40px; border-radius: 24px; margin-bottom: 40px;">
+                <h2 style="color: hsl(var(--primary)); margin-bottom: 20px;">Introduction</h2>
+                <p style="margin-bottom: 30px; line-height: 1.8; font-size: 1.1rem;">
+                    Responsive web design is essential in today's multi-device world. With hundreds of different screen sizes, from smartwatches to 4K monitors, creating websites that adapt gracefully is no longer optional—it's mandatory.
+                </p>
+                
+                <h2 style="color: hsl(var(--primary)); margin: 40px 0 20px;">1. Viewport Meta Tag</h2>
+                <p style="margin-bottom: 20px; line-height: 1.8;">
+                    The viewport meta tag is the foundation of responsive design. It tells browsers how to scale the page on different devices.
+                </p>
+                <pre style="background: hsl(var(--background)); padding: 20px; border-radius: 16px; overflow-x: auto; margin-bottom: 30px;"><code style="color: hsl(var(--primary-light));">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+                
+                <h2 style="color: hsl(var(--primary)); margin: 40px 0 20px;">2. Flexible Grids with CSS Grid & Flexbox</h2>
+                <p style="margin-bottom: 20px; line-height: 1.8;">
+                    Modern CSS gives us powerful layout tools. Use CSS Grid for overall page layout and Flexbox for components.
+                </p>
+                <pre style="background: hsl(var(--background)); padding: 20px; border-radius: 16px; overflow-x: auto; margin-bottom: 30px;"><code style="color: hsl(var(--primary-light));">.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}</code></pre>
+                
+                <h2 style="color: hsl(var(--primary)); margin: 40px 0 20px;">3. Media Queries</h2>
+                <p style="margin-bottom: 20px; line-height: 1.8;">
+                    Media queries allow you to apply CSS based on screen width, resolution, and other characteristics.
+                </p>
+                <pre style="background: hsl(var(--background)); padding: 20px; border-radius: 16px; overflow-x: auto; margin-bottom: 30px;"><code style="color: hsl(var(--primary-light));">@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}</code></pre>
+                
+                <div style="background: linear-gradient(145deg, hsl(var(--primary) / 0.1), hsl(var(--background))); padding: 30px; border-radius: 20px; margin: 40px 0; border-left: 6px solid hsl(var(--primary));">
+                    <p style="font-style: italic; margin-bottom: 15px; font-size: 1.2rem;">"Design isn't about how it looks, it's about how it works. On every screen."</p>
+                    <p style="color: hsl(var(--primary)); font-weight: bold;">— Mohammadreza Hadi</p>
+                </div>
+                
+                <h2 style="color: hsl(var(--primary)); margin: 40px 0 20px;">Conclusion</h2>
+                <p style="margin-bottom: 20px; line-height: 1.8;">
+                    Responsive design is a mindset. Start with mobile, add complexity as screen size increases, and always test on real devices. The web is for everyone, regardless of their device.
+                </p>
+            </div>
+            
+            <section class="comments-section">
+                <h3 style="margin-bottom: 30px;">💬 Comments</h3>
+                
+                <div class="comment">
+                    <strong>Nazanin Seifi</strong>
+                    <p style="margin-top: 8px;">Great article! The auto-fit trick is my favorite. Thanks for sharing.</p>
+                    <small style="color: hsl(var(--muted-foreground));">2 days ago</small>
+                </div>
+                
+                <div class="comment">
+                    <strong>Ali Rezaei</strong>
+                    <p style="margin-top: 8px;">Very helpful. I've been struggling with responsive tables, any tips?</p>
+                    <small style="color: hsl(var(--muted-foreground));">1 day ago</small>
+                </div>
+                
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts..." rows="4"></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </section>
+            
+            <section class="related-posts">
+                <h3 style="margin-bottom: 20px;">📚 Related Posts</h3>
+                <ul>
+                    <li><a href="SingleBlog-JavaScript.html">JavaScript ES6+ Features</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    
+    <footer class="footer english-text">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="english-title footer-logo">BasuCompt</h3>
+                <p>Building the future of computing</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="People.html">People</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Memes.html">Memes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BasuCompt. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+    <script src="./js/script.js"></script>
+</body>
+</html>
