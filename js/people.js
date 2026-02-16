@@ -35,6 +35,18 @@ const people = [
         courses: ["C# Programming", "ASP.NET Core", "Database Design"],
         fullBio: "Mohammadreza is a passionate software developer focused on building robust applications with C# and .NET technologies. He loves solving complex problems."
     },
+    {
+        id: "amirhossein-barati",
+        name: "Amirhossein Barati",
+        role: "Computer Engineering Student",
+        bio: "Undergraduate student at Bu-Ali Sina University. Front-end developer and UI/UX enthusiast.",
+        initials: "NS",
+        blogUrl: "",
+        interests: [],
+        email: "",
+        courses: [],
+        fullBio: "Just living"
+    },
     {//برای بقیه افراد کلاس مانند قسمت های بالا می توانند برای خود درست کنند.
         id: "empty",
         name: "-- -- --",

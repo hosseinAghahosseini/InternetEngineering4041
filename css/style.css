@@ -330,6 +330,139 @@ main {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* ========== کاروسل صفحه اصلی ========== */
+.home-gallery-section {
+    margin-top: 20px;
+}
+
+.home-gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.home-gallery-header .page-title {
+    margin-bottom: 0;
+}
+
+.home-carousel {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid hsl(var(--border));
+    background: hsl(var(--card));
+}
+
+.home-carousel-viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.home-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.home-carousel-slide {
+    min-width: 100%;
+    margin: 0;
+    position: relative;
+    aspect-ratio: 16 / 8;
+}
+
+.home-carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.home-carousel-slide figcaption {
+    position: absolute;
+    left: 20px;
+    bottom: 16px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+.home-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: hsl(var(--background) / 0.72);
+    color: #fff;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 2;
+    transition: var(--transition-default);
+}
+
+.home-carousel-btn:hover {
+    background: hsl(var(--primary));
+}
+
+.home-carousel-btn.prev {
+    left: 14px;
+}
+
+.home-carousel-btn.next {
+    right: 14px;
+}
+
+.home-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.home-carousel-dot {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background: hsl(var(--muted-foreground) / 0.5);
+    cursor: pointer;
+    transition: var(--transition-default);
+}
+
+.home-carousel-dot.is-active {
+    width: 28px;
+    border-radius: 999px;
+    background: hsl(var(--primary));
+}
+
+@media (max-width: 768px) {
+    .home-carousel-slide {
+        aspect-ratio: 4 / 3;
+    }
+
+    .home-carousel-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 25px;
+    }
+
+    .home-carousel-slide figcaption {
+        left: 12px;
+        right: 12px;
+        bottom: 10px;
+        font-size: 0.85rem;
+    }
+}
+
 /* ========== پیپل کارت‌ها ========== */
 .people-container {
     max-width: 1200px;

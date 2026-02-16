@@ -118,6 +118,71 @@ function initGalleryLightbox() {
     });
 }
 
+// ========== Carousel ==========
+function initHomeCarousel() {
+    const carousel = document.querySelector(".home-carousel");
+    if (!carousel) return;
+
+    const track = carousel.querySelector(".home-carousel-track");
+    const slides = Array.from(carousel.querySelectorAll(".home-carousel-slide"));
+    const prevBtn = carousel.querySelector(".home-carousel-btn.prev");
+    const nextBtn = carousel.querySelector(".home-carousel-btn.next");
+    const dots = Array.from(document.querySelectorAll(".home-carousel-dot"));
+
+    if (!track || slides.length === 0) return;
+
+    let currentIndex = 0;
+    let autoPlayId = null;
+
+    function goToSlide(index) {
+        currentIndex = (index + slides.length) % slides.length;
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        dots.forEach((dot, dotIndex) => {
+            dot.classList.toggle("is-active", dotIndex === currentIndex);
+        });
+    }
+
+    function startAutoPlay() {
+        stopAutoPlay();
+        autoPlayId = setInterval(() => {
+            goToSlide(currentIndex + 1);
+        }, 4000);
+    }
+
+    function stopAutoPlay() {
+        if (autoPlayId) {
+            clearInterval(autoPlayId);
+            autoPlayId = null;
+        }
+    }
+
+    prevBtn?.addEventListener("click", () => {
+        goToSlide(currentIndex - 1);
+    });
+
+    nextBtn?.addEventListener("click", () => {
+        goToSlide(currentIndex + 1);
+    });
+
+    dots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+            const targetSlide = Number(dot.dataset.slide);
+            if (!Number.isNaN(targetSlide)) {
+                goToSlide(targetSlide);
+            }
+        });
+    });
+
+    carousel.addEventListener("mouseenter", stopAutoPlay);
+    carousel.addEventListener("mouseleave", startAutoPlay);
+    carousel.addEventListener("focusin", stopAutoPlay);
+    carousel.addEventListener("focusout", startAutoPlay);
+
+    goToSlide(0);
+    startAutoPlay();
+}
+
 // ========== اجرای توابع ==========
 document.addEventListener("DOMContentLoaded", () => {
     initScrollToTop();
@@ -125,6 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initSmoothScroll();
     initContactForm();
     initGalleryLightbox();
+    initHomeCarousel();
     
     console.log("✅ BasuCompt Script Loaded Successfully!");
 });
