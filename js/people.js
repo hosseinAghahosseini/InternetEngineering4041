@@ -47,6 +47,18 @@ const people = [
         courses: [],
         fullBio: "Just living"
     },
+    {
+        id: "amir-mohammad-nasiri",
+        name: "Amir Mohammad Nasiri",
+        role: "Computer Engineering Student",
+        bio: "Computer Engineering Student at Bu-Ali Sina University, Hamedan | Interested in Android Development with Kotlin and Jetpack Compose",
+        initials: "AMN",
+        blogUrl: "SinglePeople-Nasiri.html",
+        interests: ["Java", "Kotlin", "Jetpack Compose", "Retrofit"],
+        email: "amirmonasiri@gmail.com",
+        courses: ["Kotlin", "Flutter"],
+        fullBio: "A Computer Engineering student at Bu-Ali Sina University, passionate about Mobile App Development and IoT. Currently focused on learning Android development with Jetpack Compose."
+    },
     {//برای بقیه افراد کلاس مانند قسمت های بالا می توانند برای خود درست کنند.
         id: "empty",
         name: "-- -- --",
